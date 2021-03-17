@@ -4,6 +4,7 @@ header {
   .topHeader {
     background-color: #ffffff;
     height: 80px;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     display: flex;
@@ -33,12 +34,18 @@ header {
           width: 100%;
           flex-direction: column;
           padding-left: 0;
-          &:not(.active) {
+          border-top: 1px solid #eee;
+          border-bottom: 1px solid #eee;
+          &:not(.open) {
             display: none;
           }
         }
         .nav_blk {
           display: flex;
+          @media (max-width: 991px) {
+            flex-direction: column;
+            width: 100%;
+          }
           > li {
             a {
               display: block;
@@ -51,6 +58,11 @@ header {
               @media (max-width: 1180px) {
                 padding: 2.2rem 1rem;
               }
+
+              @media (max-width: 991px) {
+                padding: 1rem;
+                text-align: center;
+              }
             }
             &.active,
             &:hover {
@@ -62,6 +74,9 @@ header {
         }
         .socialNav_blk {
           display: flex;
+          @media (max-width: 991px) {
+            justify-content: center;
+          }
 
           > li {
             padding: 0 5px;
@@ -70,6 +85,23 @@ header {
               line-height: 1;
             }
           }
+        }
+      }
+      .hamburgar {
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        cursor: pointer;
+        flex-direction: column;
+        display: none;
+        @media (max-width: 991px) {
+          display: flex;
+        }
+        span {
+          height: 4px;
+          width: 100%;
+          background-color: #000;
+          margin: 4px 0;
         }
       }
     }
