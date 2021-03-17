@@ -112,9 +112,9 @@ header {
     img {
       max-width: 100%;
 
-      @media (max-width: 767px) {
-        max-height: 26px;
-      }
+      // @media (max-width: 767px) {
+      //   max-height: 26px;
+      // }
     }
   }
 }
