@@ -19,12 +19,27 @@ header {
       width: calc(100% - 167px);
       display: flex;
       align-items: center;
-      justify-content: space-between;
       nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding-left: 25px;
+        @media (max-width: 991px) {
+          position: absolute;
+          background: #fff;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          flex-direction: column;
+          padding-left: 0;
+          &:not(.active) {
+            display: none;
+          }
+        }
         .nav_blk {
           display: flex;
-          li {
+          > li {
             a {
               display: block;
               padding: 2.2rem 1.7143rem;
@@ -33,6 +48,9 @@ header {
               color: $text-two;
               font-size: 1.143rem;
               font-weight: 600;
+              @media (max-width: 1180px) {
+                padding: 2.2rem 1rem;
+              }
             }
             &.active,
             &:hover {
@@ -42,14 +60,15 @@ header {
             }
           }
         }
-      }
-      .socialNav_blk {
-        display: flex;
-        li {
-          padding: 0 5px;
-          a {
-            display: block;
-            line-height: 1;
+        .socialNav_blk {
+          display: flex;
+
+          > li {
+            padding: 0 5px;
+            a {
+              display: block;
+              line-height: 1;
+            }
           }
         }
       }

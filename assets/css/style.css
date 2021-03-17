@@ -714,15 +714,32 @@ header .topHeader .rightHeader {
   width: calc(100% - 167px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 header .topHeader .rightHeader nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 25px;
+}
+@media (max-width: 991px) {
+  header .topHeader .rightHeader nav {
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  header .topHeader .rightHeader nav:not(.active) {
+    display: none;
+  }
 }
 header .topHeader .rightHeader nav .nav_blk {
   display: flex;
 }
-header .topHeader .rightHeader nav .nav_blk li a {
+header .topHeader .rightHeader nav .nav_blk > li a {
   display: block;
   padding: 2.2rem 1.7143rem;
   border-bottom: 4px solid transparent;
@@ -731,16 +748,21 @@ header .topHeader .rightHeader nav .nav_blk li a {
   font-size: 1.143rem;
   font-weight: 600;
 }
-header .topHeader .rightHeader nav .nav_blk li.active a, header .topHeader .rightHeader nav .nav_blk li:hover a {
+@media (max-width: 1180px) {
+  header .topHeader .rightHeader nav .nav_blk > li a {
+    padding: 2.2rem 1rem;
+  }
+}
+header .topHeader .rightHeader nav .nav_blk > li.active a, header .topHeader .rightHeader nav .nav_blk > li:hover a {
   border-color: #ffd27a;
 }
-header .topHeader .rightHeader .socialNav_blk {
+header .topHeader .rightHeader nav .socialNav_blk {
   display: flex;
 }
-header .topHeader .rightHeader .socialNav_blk li {
+header .topHeader .rightHeader nav .socialNav_blk > li {
   padding: 0 5px;
 }
-header .topHeader .rightHeader .socialNav_blk li a {
+header .topHeader .rightHeader nav .socialNav_blk > li a {
   display: block;
   line-height: 1;
 }
