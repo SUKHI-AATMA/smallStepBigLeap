@@ -168,9 +168,9 @@ body {
   line-height: 1.2;
   // background-image: url(../images/siteimg.jpg);
   background-size: 100% auto;
-  @media (max-width: 767px) {
-    font-size: 1.25rem;
-  }
+  // @media (max-width: 767px) {
+  //   font-size: 1.25rem;
+  // }
 }
 h1 {
   font-size: 3rem;
@@ -677,6 +677,14 @@ label {
   &.btn-secondary {
     background-color: $secondary;
     color: #fff;
+  }
+  &.btn-lg {
+    width: 150px;
+    text-align: center;
+    min-height: 38px;
+    @media (max-width: 575px) {
+      width: 120px;
+    }
   }
 }
 .title {
