@@ -1,6 +1,6 @@
 .ourPhilosophy {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.42857rem;
+  padding-bottom: 1.42857rem;
   .ourPhilosophyCont {
     color: #737373;
     i {
@@ -8,14 +8,14 @@
     }
     p {
       color: #737373;
-      margin-bottom: 25px;
+      margin-bottom: 1.7857143rem;
     }
     ul {
       padding-left: 1.92857rem;
       li {
         position: relative;
         line-height: 1.4;
-        margin-bottom: 10px;
+        margin-bottom: 0.7142857rem;
         color: #737373;
         &:before {
           content: "";
@@ -25,20 +25,40 @@
           background-color: #138e55;
           display: block;
           position: absolute;
-          left: -25px;
+          left: -1.7857143rem;
           top: 4px;
         }
+      }
+    }
+    @media (max-width: 991px) {
+      .row {
+        flex-wrap: wrap;
+        .col-6 {
+          max-width: 100%;
+          flex: 1 1 100%;
+        }
+      }
+      .w-50 {
+        width: 100%;
       }
     }
   }
 }
 .ourMission {
   background-color: #138e55;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1.07143rem;
+  padding-right: 1.07143rem;
+  .row {
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+  }
   .ourMissionImgSec {
     width: 50%;
     min-width: 50%;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
     img {
       display: block;
     }
@@ -49,6 +69,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
     .missContainer {
       width: 100%;
       max-width: 462px;
@@ -57,8 +80,9 @@
       display: flex;
       flex-direction: column;
       text-align: center;
+      padding: 2.5rem 1.07143rem;
       strong {
-        font-size: 22px;
+        font-size: 1.57143rem;
         font-style: italic;
         margin-bottom: 2rem;
         margin-top: 2rem;
@@ -74,34 +98,45 @@
   }
 }
 .ourTeam {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 4.2857142rem;
+  padding-bottom: 4.2857142rem;
   .teamContainer {
     .row {
       flex-wrap: wrap;
+
+      @media (max-width: 767px) {
+        justify-content: center;
+        .col-6 {
+          max-width: 28.57142857142857rem;
+          flex: 1 1 100%;
+        }
+      }
     }
     .teamMember {
       text-align: center;
       display: flex;
       flex-direction: column;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 1.42857rem;
+      margin-bottom: 1.42857rem;
       .memberImg {
-        width: 182px;
-        height: 182px;
+        width: 13rem;
+        height: 13rem;
         margin: auto;
+        img {
+          max-width: 100%;
+        }
       }
       .memberName {
-        padding: 30px 0;
+        padding: 2.142857rem 0;
         display: flex;
         margin: auto;
         flex-direction: column;
         span {
-          width: 50px;
-          height: 2px;
+          width: 3.57142857rem;
+          height: 0.142857rem;
           background: #ffd27a;
           margin: auto;
-          margin-top: 28px;
+          margin-top: 2rem;
         }
       }
       .memberInfo {
@@ -114,6 +149,42 @@
             cursor: pointer;
           }
         }
+      }
+    }
+  }
+}
+.theBeginning {
+  background-color: #efeeed;
+  padding-top: 5rem;
+  padding-bottom: 3.57142857rem;
+  position: relative;
+  border-top: 1px solid #cccccc;
+  color: #737373;
+  .topImg {
+    position: absolute;
+    top: -3.142857rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  .theBeginning_blk {
+    display: flex;
+    flex-direction: column;
+    > strong {
+      padding: 2.142857rem 0;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 1.7857143rem;
+      line-height: 1.5;
+    }
+    .continueReading {
+      text-align: center;
+      strong {
+        color: #138e55;
       }
     }
   }

@@ -712,15 +712,16 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 18px;
+  padding-bottom: 1.2857143rem;
   h4 {
     font-size: 1.57143rem;
     font-weight: 600;
     margin-bottom: 1.64286rem;
   }
   span {
-    width: 50px;
-    height: 8px;
+    width: 3.57142857rem;
+    height: 0.571429rem;
     background-color: #ffd27a;
   }
 }
+
