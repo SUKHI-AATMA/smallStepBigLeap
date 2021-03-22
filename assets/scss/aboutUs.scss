@@ -34,6 +34,8 @@
 }
 .ourMission {
   background-color: #138e55;
+  padding-left: 15px;
+  padding-right: 15px;
   .ourMissionImgSec {
     width: 50%;
     min-width: 50%;
@@ -44,11 +46,75 @@
   .ourMissionContSec {
     width: 50%;
     min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .missContainer {
       width: 100%;
       max-width: 462px;
       color: #fff;
       margin: auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      strong {
+        font-size: 22px;
+        font-style: italic;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      p {
+        line-height: 1.5;
+        span {
+          font-weight: 600;
+          display: block;
+        }
+      }
+    }
+  }
+}
+.ourTeam {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .teamContainer {
+    .row {
+      flex-wrap: wrap;
+    }
+    .teamMember {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .memberImg {
+        width: 182px;
+        height: 182px;
+        margin: auto;
+      }
+      .memberName {
+        padding: 30px 0;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        span {
+          width: 50px;
+          height: 2px;
+          background: #ffd27a;
+          margin: auto;
+          margin-top: 28px;
+        }
+      }
+      .memberInfo {
+        p {
+          line-height: 1.3;
+          strong {
+            padding-top: 5px;
+            display: block;
+            color: #138e55;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }

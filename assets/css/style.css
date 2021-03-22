@@ -693,9 +693,9 @@ label {
 }
 
 .col-6 {
-  width: 1 1 50%;
+  flex: 1 1 50%;
   width: 100%;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .btn {
@@ -1270,6 +1270,8 @@ footer .topFooter a {
 
 .ourMission {
   background-color: #138e55;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .ourMission .ourMissionImgSec {
   width: 50%;
@@ -1281,10 +1283,71 @@ footer .topFooter a {
 .ourMission .ourMissionContSec {
   width: 50%;
   min-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ourMission .ourMissionContSec .missContainer {
   width: 100%;
   max-width: 462px;
   color: #fff;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.ourMission .ourMissionContSec .missContainer strong {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.ourMission .ourMissionContSec .missContainer p {
+  line-height: 1.5;
+}
+.ourMission .ourMissionContSec .missContainer p span {
+  font-weight: 600;
+  display: block;
+}
+
+.ourTeam {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.ourTeam .teamContainer .row {
+  flex-wrap: wrap;
+}
+.ourTeam .teamContainer .teamMember {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.ourTeam .teamContainer .teamMember .memberImg {
+  width: 182px;
+  height: 182px;
+  margin: auto;
+}
+.ourTeam .teamContainer .teamMember .memberName {
+  padding: 30px 0;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.ourTeam .teamContainer .teamMember .memberName span {
+  width: 50px;
+  height: 2px;
+  background: #ffd27a;
+  margin: auto;
+  margin-top: 28px;
+}
+.ourTeam .teamContainer .teamMember .memberInfo p {
+  line-height: 1.3;
+}
+.ourTeam .teamContainer .teamMember .memberInfo p strong {
+  padding-top: 5px;
+  display: block;
+  color: #138e55;
+  cursor: pointer;
 }
