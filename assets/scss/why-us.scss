@@ -1,0 +1,63 @@
+.ourApproach {
+  .ourApproachCont {
+    padding-top: 3.7857rem;
+    padding-bottom: 1.7857rem;
+    color: #737373;
+    background-image: url(../images/OurApproach.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    @media (max-width: 575px) {
+      background-size: 23vw;
+    }
+    i {
+      font-weight: 600;
+    }
+    p {
+      color: #737373;
+      margin-bottom: 1.7857143rem;
+      line-height: 1.4;
+    }
+    .subTitleSec {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      .subTitle {
+        h4 {
+          font-size: 1.142857rem;
+          font-weight: 600;
+          margin-bottom: 1.64286rem;
+        }
+        span {
+          width: 3.57142857rem;
+          height: 0.571429rem;
+          display: flex;
+          background-color: #ffd27a;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 991px) {
+      .row {
+        flex-wrap: wrap;
+        .col-6 {
+          max-width: 100%;
+          flex: 1 1 100%;
+        }
+      }
+      .w-50 {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .title {
+        h4 {
+          margin-bottom: 0.64286rem;
+        }
+      }
+    }
+  }
+}

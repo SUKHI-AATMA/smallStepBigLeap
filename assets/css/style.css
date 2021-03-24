@@ -808,7 +808,7 @@ header .topHeader .rightHeader nav .nav_blk {
 }
 header .topHeader .rightHeader nav .nav_blk > li a {
   display: block;
-  padding: 2.2rem 1.7143rem;
+  padding: 2rem 1.7143rem;
   border-bottom: 4px solid transparent;
   text-decoration: none;
   color: #515151;
@@ -826,7 +826,10 @@ header .topHeader .rightHeader nav .nav_blk > li a {
     text-align: center;
   }
 }
-header .topHeader .rightHeader nav .nav_blk > li.active a, header .topHeader .rightHeader nav .nav_blk > li:hover a {
+header .topHeader .rightHeader nav .nav_blk > li a.active {
+  border-color: #ffd27a;
+}
+header .topHeader .rightHeader nav .nav_blk > li:hover a {
   border-color: #ffd27a;
 }
 header .topHeader .rightHeader nav .socialNav_blk {
@@ -1026,6 +1029,13 @@ footer .topFooter a {
     background-position: center top;
   }
 }
+@media (max-width: 575px) {
+  .homeBanner .gradBanner {
+    background-position: center top;
+    background-image: url(../images/banner_mob_01.png);
+    background-size: 100%;
+  }
+}
 @media (min-width: 1370px) {
   .homeBanner .gradBanner {
     background-size: contain;
@@ -1047,6 +1057,12 @@ footer .topFooter a {
     padding-top: 40vw;
   }
 }
+@media (max-width: 575px) {
+  .homeBanner .gradBanner .bannerContent {
+    padding-top: 74vw;
+    text-align: center;
+  }
+}
 .homeBanner .gradBanner .bannerContent h3 {
   color: #138e55;
   font-size: 1.4286rem;
@@ -1063,17 +1079,40 @@ footer .topFooter a {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .homeBanner .marqueeSec span {
-  font-size: 16px;
+  font-size: 1.14286rem;
   color: #737373;
   line-height: 1;
   padding-left: 1.5rem;
 }
+@media (max-width: 575px) {
+  .homeBanner .marqueeSec span {
+    padding-left: 0.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .homeBanner .marqueeSec img {
+    display: none;
+  }
+}
 
-.whatWeDo {
-  padding-top: 42px;
-  padding-bottom: 42px;
+.whatWeDo .whatWeDo_blk {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  background-image: url(../images/element_001.png);
+  background-repeat: no-repeat;
+  background-position: -37px -65px;
+}
+@media (max-width: 575px) {
+  .whatWeDo .whatWeDo_blk {
+    background-size: 35vw;
+    background-position: -6vw -11vw;
+  }
 }
 .whatWeDo .whatWeDo_blk h6 {
   font-size: 1.142857rem;
@@ -1107,8 +1146,8 @@ footer .topFooter a {
 }
 
 .ourExpertise {
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .ourExpertise .expertiesRow {
   display: flex;
@@ -1146,7 +1185,7 @@ footer .topFooter a {
 }
 .ourExpertise .expertiesRow ul.tree:before {
   content: "";
-  width: calc(100% - 142px);
+  width: calc(100% - 13rem);
   height: 1px;
   display: flex;
   left: 0;
@@ -1473,6 +1512,12 @@ footer .topFooter a {
     padding-right: 1.42857rem;
   }
 }
+@media (max-width: 575px) {
+  .ourExpertiseSec .ourExpertiseCont {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .ourExpertiseSec .accordianSec {
   border-top: 0.142857rem solid #515151;
   border-bottom: 0.142857rem solid #515151;
@@ -1640,6 +1685,8 @@ footer .topFooter a {
 }
 .grid-l1 .boxListing {
   padding: 0;
+}
+.grid-l1 .boxListing:not(:last-child) {
   border-bottom: 0.07142857rem solid #c0bfbe;
 }
 .grid-l1 .boxListing .box-acco .listigHeader {
@@ -1760,4 +1807,65 @@ footer .topFooter a {
   height: auto;
   overflow: hidden;
   display: none;
+}
+.grid-l1 .boxListing .box-acco .level-box.open {
+  display: block;
+}
+.ourApproach .ourApproachCont {
+  padding-top: 3.7857rem;
+  padding-bottom: 1.7857rem;
+  color: #737373;
+  background-image: url(../images/OurApproach.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+@media (max-width: 575px) {
+  .ourApproach .ourApproachCont {
+    background-size: 23vw;
+  }
+}
+.ourApproach .ourApproachCont i {
+  font-weight: 600;
+}
+.ourApproach .ourApproachCont p {
+  color: #737373;
+  margin-bottom: 1.7857143rem;
+  line-height: 1.4;
+}
+.ourApproach .ourApproachCont .subTitleSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.ourApproach .ourApproachCont .subTitleSec .subTitle h4 {
+  font-size: 1.142857rem;
+  font-weight: 600;
+  margin-bottom: 1.64286rem;
+}
+.ourApproach .ourApproachCont .subTitleSec .subTitle span {
+  width: 3.57142857rem;
+  height: 0.571429rem;
+  display: flex;
+  background-color: #ffd27a;
+}
+.ourApproach .ourApproachCont img {
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .ourApproach .ourApproachCont .row {
+    flex-wrap: wrap;
+  }
+  .ourApproach .ourApproachCont .row .col-6 {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .ourApproach .ourApproachCont .w-50 {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .ourApproach .ourApproachCont .title h4 {
+    margin-bottom: 0.64286rem;
+  }
 }

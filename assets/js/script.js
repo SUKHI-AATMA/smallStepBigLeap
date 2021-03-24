@@ -7,8 +7,8 @@ $(function () {
     $("nav").toggleClass("open");
     $(this).toggleClass("open");
   });
-  $("body").on("click", ".listigHeader .compDetails, .action", function (e) {
-    var el = $(this).parents(".listigHeader");
+  $("body").on("click", ".listigHeader, .action", function (e) {
+    var el = $(this);
     $(".box-acco").find(".level-box").stop().slideUp();
     if ($(el).find(".action").hasClass("active")) {
       $(el).find(".action").removeClass("active");

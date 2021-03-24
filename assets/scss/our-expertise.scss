@@ -31,6 +31,10 @@
       padding-left: 1.42857rem;
       padding-right: 1.42857rem;
     }
+    @media (max-width: 575px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   .accordianSec {
     border-top: 0.142857rem solid #515151;
@@ -183,7 +187,9 @@
   overflow: hidden;
   .boxListing {
     padding: 0;
-    border-bottom: 0.07142857rem solid #c0bfbe;
+    &:not(:last-child) {
+      border-bottom: 0.07142857rem solid #c0bfbe;
+    }
     .box-acco {
       .listigHeader {
         width: 100%;
@@ -304,7 +310,9 @@
         height: auto;
         overflow: hidden;
         display: none;
-
+        &.open {
+          display: block;
+        }
         @media (max-width: 991px) {
         }
       }
