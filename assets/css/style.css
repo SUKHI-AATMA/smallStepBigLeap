@@ -745,6 +745,34 @@ label {
   background-color: #ffd27a;
 }
 
+.fadeUp {
+  transform: translate(0, 100px);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.fadeUp.animate {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fadeDown {
+  transform: translate(0, -100px);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.fadeDown.animate {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.fadeIn.animate {
+  opacity: 1;
+}
+
 header {
   color: #fff;
   position: relative;
@@ -1871,60 +1899,131 @@ footer .topFooter a {
 }
 
 .contactUs {
-  padding-top: 20px;
+  padding-top: 1.42857rem;
   color: #737373;
+}
+@media (max-width: 991px) {
+  .contactUs .contactUsCont .w-50 {
+    width: 100%;
+  }
 }
 
 .contactUsDetails_Sec {
-  padding-top: 8px;
-  padding-bottom: 44px;
+  padding-top: 0.571428rem;
+  padding-bottom: 3.1428571429rem;
   color: #737373;
 }
 .contactUsDetails_Sec .contactUsDetails .border-right {
   border-right: 1px solid #ccc;
 }
+@media (max-width: 768px) {
+  .contactUsDetails_Sec .contactUsDetails .border-right {
+    border: 0;
+  }
+}
 .contactUsDetails_Sec .contactUsDetails .contactAddress {
-  width: 260px;
+  max-width: 18.57rem;
+  width: 100%;
   display: block;
   margin: 0 auto;
   text-align: center;
 }
+@media (max-width: 766px) {
+  .contactUsDetails_Sec .contactUsDetails .contactAddress {
+    max-width: none;
+  }
+}
 .contactUsDetails_Sec .contactUsDetails .contactAddress h6 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.142857rem;
   color: #515151;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 2.1428571429rem;
+  padding-top: 2.1428571429rem;
 }
 .contactUsDetails_Sec .contactUsDetails .contactAddress p {
   margin-bottom: 0;
-  padding-bottom: 30px;
+  padding-bottom: 2.1428571429rem;
 }
 .contactUsDetails_Sec .contactUsDetails .contactAddress .line {
-  width: 50px;
+  width: 3.5714rem;
   height: 2px;
   background-color: #ffd27a;
   display: block;
   margin: auto;
 }
 .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec {
-  width: 306px;
+  max-width: 306px;
+  width: 100%;
   margin: auto;
+}
+@media (max-width: 766px) {
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec {
+    max-width: none;
+  }
 }
 .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec h6 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.142857rem;
   color: #515151;
-  padding-bottom: 30px;
+  padding-bottom: 2.1428571429rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec h6 {
+    padding-top: 2.1428571429rem;
+  }
+}
 .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .fromGroup {
-  margin-bottom: 18px;
+  margin-bottom: 1.2857rem;
 }
 .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .fromGroup .form_control {
   min-height: 32px;
   border: 1px solid #cac8c8;
-  border-radius: 5px;
+  border-radius: 0.35714rem;
   width: 100%;
-  padding: 5px 10px;
+  padding: 0.35714rem 0.7142857rem;
+}
+.contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .fromGroup textarea.form_control {
+  height: 84px;
+}
+@media (max-width: 765px) {
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .form_control:first-child {
+    margin-bottom: 1.2857rem;
+  }
+}
+@media (min-width: 766px) {
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup {
+    display: flex;
+  }
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .form_control:first-child {
+    border-radius: 0.35714rem 0 0 0.35714rem;
+    border-right: 0;
+  }
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .form_control:last-child {
+    border-radius: 0 0.35714rem 0.35714rem 0;
+  }
+}
+.contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm button {
+  width: 150px;
+  height: 38px;
+  background-color: #138f54;
+  border-radius: 0.35714rem;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+}
+@media (max-width: 768px) {
+  .contactUsDetails_Sec .contactUsDetails .row {
+    flex-wrap: wrap;
+  }
+  .contactUsDetails_Sec .contactUsDetails .col-6 {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.contectUsSucess {
+  display: none;
 }

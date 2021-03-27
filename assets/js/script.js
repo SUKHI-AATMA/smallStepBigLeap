@@ -20,8 +20,44 @@ $(function () {
   });
 });
 
-$(window).resize(function () {
-  if ($(".scroll").length) {
-    $(".scroll").jScrollPane();
-  }
-});
+$(window)
+  .on("resize", function () {
+    if ($(".scroll").length) {
+      $(".scroll").jScrollPane();
+    }
+  })
+  .on("load", function () {
+    if (window.location.href.split("?")[1] == "success=true") {
+      $(".cuForm").hide();
+      $(".contectUsSucess").show();
+    }
+  });
+
+var clList = [".fadeIn, .fadeUp, .fadeDown"];
+
+function animateClass() {
+  setTimeout(function () {
+    clList.forEach(function (item, index) {
+      var anim = document.querySelectorAll(item);
+      for (var i = 0, nbs = anim.length; i < nbs; i++) {
+        var animELe = anim[i];
+        var rect = animELe.getBoundingClientRect();
+        var isVisible =
+          rect.top - window.innerHeight < 0 && rect.bottom > -50 ? true : false;
+        if (isVisible) {
+          animELe.classList.add("animate");
+        } else {
+          animELe.classList.remove("animate");
+        }
+      }
+    });
+  }, 100);
+}
+$(window)
+  .on("load", function () {
+    animateClass();
+  })
+  .on("scroll", function () {
+    animateClass();
+  });
+animateClass();

@@ -725,3 +725,30 @@ label {
   }
 }
 
+.fadeUp {
+  transform: translate(0, 100px);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  &.animate {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.fadeDown {
+  transform: translate(0, -100px);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  &.animate {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  &.animate {
+    opacity: 1;
+  }
+}

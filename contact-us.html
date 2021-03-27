@@ -66,7 +66,7 @@
 
 
     <section class="contactUs">
-        <div class="text-center"><img src="assets/images/contact-us.png" alt=""></div>
+        <div class="text-center fadeIn"><img src="assets/images/contact-us.png" alt=""></div>
 
         <div class="title">
             <h4>Contact Us</h4>
@@ -85,7 +85,7 @@
             <div class="contactUsDetails">
                 <div class="row">
                     <div class="col-6 border-right">
-                        <div class="contactAddress">
+                        <div class="contactAddress fadeUp">
                             <div class="address">
                                 <h6 class="pt-0">Address</h6>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium loremque
@@ -105,19 +105,21 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="contectUsForm_sec">
+                        <div class="contectUsForm_sec fadeUp">
                             <h6>Happy to contact you</h6>
                             <div class="cuForm">
-                                <form name="contact" action="contact-us.html?success=true" method="POST" data-netlify="true"
-                                    class="contectUsForm">
+                                <form name="contact" action="contact-us.html?success=true" method="POST"
+                                    data-netlify="true" class="contectUsForm">
                                     <div class="fromGroup">
                                         <input type="text" name="name" placeholder="Name" class="form_control">
                                     </div>
                                     <div class="fromGroup">
-                                        <input type="tel" name="mobile" placeholder="Mobile" class="form_control">
-                                    </div>
-                                    <div class="fromGroup">
-                                        <input type="email" name="email" placeholder="Email" class="form_control">
+                                        <div class="inputGroup">
+                                            <input type="tel" name="mobile" placeholder="Mobile"
+                                                class="form_control mobile">
+                                            <input type="email" name="email" placeholder="Email"
+                                                class="form_control email">
+                                        </div>
                                     </div>
 
                                     <div class="fromGroup">
@@ -131,7 +133,16 @@
                                     <input type="hidden" name="form-name" value="contact">
                                 </form>
                             </div>
+                            <div class="contectUsSucess pt-5">
+                                <h6 class="mb-3">Congratulations for taking
+                                    your small step towards wellbeing!
+                                    We have received your message and
+                                    will connect soon.</h6>
+
+                                <h6>Stay Safe, Stay Healthy.</h6>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
