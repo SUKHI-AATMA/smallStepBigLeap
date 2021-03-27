@@ -1,0 +1,38 @@
+.contactUs {
+  padding-top: 20px;
+  color: #737373;
+}
+.contactUsDetails_Sec {
+  padding-top: 8px;
+  padding-bottom: 44px;
+  color: #737373;
+  .contactUsDetails {
+    .border-right {
+      border-right: 1px solid #ccc;
+    }
+    .contactAddress {
+      width: 260px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      h6 {
+        font-weight: 600;
+        font-size: 16px;
+        color: #515151;
+        padding-bottom: 30px;
+        padding-top: 30px;
+      }
+      p {
+        margin-bottom: 0;
+        padding-bottom: 30px;
+      }
+      .line {
+        width: 50px;
+        height: 2px;
+        background-color: #ffd27a;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}

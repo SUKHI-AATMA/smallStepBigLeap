@@ -1185,7 +1185,7 @@ footer .topFooter a {
 }
 .ourExpertise .expertiesRow ul.tree:before {
   content: "";
-  width: calc(100% - 13rem);
+  width: calc(100% - 10.1rem);
   height: 1px;
   display: flex;
   left: 0;
@@ -1868,4 +1868,42 @@ footer .topFooter a {
   .ourApproach .ourApproachCont .title h4 {
     margin-bottom: 0.64286rem;
   }
+}
+
+.contactUs {
+  padding-top: 20px;
+  color: #737373;
+}
+
+.contactUsDetails_Sec {
+  padding-top: 8px;
+  padding-bottom: 44px;
+  color: #737373;
+}
+.contactUsDetails_Sec .contactUsDetails .border-right {
+  border-right: 1px solid #ccc;
+}
+.contactUsDetails_Sec .contactUsDetails .contactAddress {
+  width: 260px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.contactUsDetails_Sec .contactUsDetails .contactAddress h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #515151;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.contactUsDetails_Sec .contactUsDetails .contactAddress p {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+.contactUsDetails_Sec .contactUsDetails .contactAddress .line {
+  width: 50px;
+  height: 2px;
+  background-color: #ffd27a;
+  display: block;
+  margin: auto;
 }
