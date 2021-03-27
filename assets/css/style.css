@@ -1907,3 +1907,23 @@ footer .topFooter a {
   display: block;
   margin: auto;
 }
+.contactUsDetails_Sec .contactUsDetails .contectUsForm_sec {
+  width: 306px;
+  margin: auto;
+}
+.contactUsDetails_Sec .contactUsDetails .contectUsForm_sec h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #515151;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .fromGroup {
+  margin-bottom: 18px;
+}
+.contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .fromGroup .form_control {
+  min-height: 32px;
+  border: 1px solid #cac8c8;
+  border-radius: 5px;
+  width: 100%;
+}

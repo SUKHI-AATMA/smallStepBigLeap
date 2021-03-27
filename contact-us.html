@@ -105,11 +105,29 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="contectUsForm">
+                        <div class="contectUsForm_sec">
                             <h6>Happy to contact you</h6>
                             <div class="cuForm">
-                                <form action="" class="">
-                                    <div class="fromGroup"></div>
+                                <form name="contact" method="POST" data-netlify="true" class="contectUsForm">
+                                    <div class="fromGroup">
+                                        <input type="text" name="name" placeholder="Name" class="form_control">
+                                    </div>
+                                    <div class="fromGroup">
+                                        <input type="tel" name="mobile" placeholder="Mobile" class="form_control">
+                                    </div>
+                                    <div class="fromGroup">
+                                        <input type="email" name="email" placeholder="Email" class="form_control">
+                                    </div>
+
+                                    <div class="fromGroup">
+                                        <textarea class="form_control" placeholder="Message" name="message">
+
+                                        </textarea>
+                                    </div>
+                                    <div class="fromGroup">
+                                        <button type="submit">send</button>
+                                    </div>
+                                    <input type="hidden" name="form-name" value="contact">
                                 </form>
                             </div>
                         </div>
@@ -139,6 +157,21 @@
     <!-- the jScrollPane script -->
     <script src="assets/js/jquery.jscrollpane.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+//         document.querySelector("form").addEventListener("submit", handleSubmit);
+
+// const handleSubmit = (e) => {
+//   e.preventDefault()
+//   let myForm = document.getElementById('pizzaOrder');
+//   let formData = new FormData(myForm)
+//   fetch('/', {
+//     method: 'POST',
+//     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//     body: new URLSearchParams(formData).toString()
+//   }).then(() => console.log('Form successfully submitted')).catch((error) =>
+//     alert(error))
+// }
+    </script>
 
 </body>
 
