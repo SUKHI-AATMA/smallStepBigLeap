@@ -704,7 +704,7 @@ label {
     text-align: center;
     min-height: 38px;
     @media (max-width: 575px) {
-      width: 120px;
+      width: 11.42857rem;
     }
   }
 }
@@ -751,4 +751,113 @@ label {
   &.animate {
     opacity: 1;
   }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 8;
+  background: rgba(51, 51, 51, 0.78);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.comm_pop_container_blk {
+  display: none;
+  height: auto;
+  background: #fff;
+  position: fixed;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 700px;
+  padding: 0px;
+  border-radius: 5px;
+  .panel {
+    margin-bottom: 0;
+    border-width: 0;
+    .panel-body {
+      padding: 7.142857rem;
+      color: #737373;
+      font-size: 1rem;
+      @media (max-width: 767px) {
+        padding: 4.4rem 1.4rem 1.4rem;
+      }
+      h4 {
+        color: #515151;
+        font-size: 1.714285714285714rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2.85714rem;
+        font-weight: 600;
+        @media (max-width: 767px) {
+          padding-bottom: 1.85714rem;
+        }
+        &:after {
+          content: "";
+          width: 50px;
+          height: 8px;
+          background-color: #ffd27a;
+          display: block;
+          margin-top: 2.85714rem;
+          @media (max-width: 767px) {
+            margin-top: 1.85714rem;
+          }
+        }
+      }
+      .teamMembDetails {
+        max-height: 350px;
+        overflow-y: auto;
+        @media (max-width: 767px) {
+          max-height: 70vh;
+        }
+        p {
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+.close_btn {
+  position: absolute;
+  width: 1.42857rem;
+  height: 1.42857rem;
+  display: block;
+  right: 2.142857rem;
+  top: 2.142857rem;
+  z-index: 2;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 0.142857rem;
+    width: 1.42857rem;
+    background: #33322a;
+  }
+  &:before {
+    transform: rotate(45deg);
+    top: 0.642857rem;
+    left: 0;
+  }
+  &:after {
+    transform: rotate(-45deg);
+    top: 0.642857rem;
+    right: 0px;
+  }
+}
+
+.open_modal {
+  cursor: pointer;
 }

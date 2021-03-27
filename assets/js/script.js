@@ -18,6 +18,14 @@ $(function () {
     }
     $(el).closest(".box-acco").find(".level-box").stop().slideToggle();
   });
+  $(".open_modal_js").on("click", function () {
+    var popupID = $(this).attr("data-popupID");
+    $(".comm_popup_overlay_Js, #" + popupID).fadeIn();
+  });
+  $(".close_btn_js, .comm_popup_overlay_Js").on("click", function (e) {
+    e.preventDefault();
+    $(".comm_popup_overlay_Js, .comm_pop_container_blk").fadeOut();
+  });
 });
 
 $(window)
