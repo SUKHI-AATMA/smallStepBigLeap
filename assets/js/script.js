@@ -71,7 +71,7 @@ function animateClass() {
         if (isVisible) {
           animELe.classList.add("animate");
         } else {
-          animELe.classList.remove("animate");
+          // animELe.classList.remove("animate");
         }
       }
     });
