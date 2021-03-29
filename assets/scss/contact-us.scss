@@ -39,6 +39,9 @@
       p {
         margin-bottom: 0;
         padding-bottom: 2.142857142857143rem;
+        a {
+          color: #515151;
+        }
       }
       .line {
         width: 3.5714rem;
@@ -78,24 +81,35 @@
           textarea.form_control {
             height: 84px;
           }
+          label {
+            padding-top: 7px;
+            margin-bottom: 00;
+            color: red;
+          }
         }
         .inputGroup {
           @media (max-width: 765px) {
-            .form_control {
+            .inputform_control {
               &:first-child {
-                margin-bottom: 1.2857rem;
+                .form_control {
+                  margin-bottom: 1.2857rem;
+                }
               }
             }
           }
           @media (min-width: 766px) {
             display: flex;
-            .form_control {
+            .inputform_control {
               &:first-child {
-                border-radius: 0.35714rem 0 0 0.35714rem;
-                border-right: 0;
+                .form_control {
+                  border-radius: 0.35714rem 0 0 0.35714rem;
+                  border-right: 0;
+                }
               }
               &:last-child {
-                border-radius: 0 0.35714rem 0.35714rem 0;
+                .form_control {
+                  border-radius: 0 0.35714rem 0.35714rem 0;
+                }
               }
             }
           }
@@ -109,6 +123,7 @@
           color: #fff;
           text-transform: capitalize;
           display: block;
+          cursor: pointer;
         }
       }
     }

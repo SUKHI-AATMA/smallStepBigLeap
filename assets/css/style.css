@@ -748,7 +748,7 @@ label {
 .fadeUp {
   transform: translate(0, 100px);
   opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .fadeUp.animate {
   transform: translate(0, 0);
@@ -758,7 +758,7 @@ label {
 .fadeDown {
   transform: translate(0, -100px);
   opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .fadeDown.animate {
   transform: translate(0, 0);
@@ -767,7 +767,7 @@ label {
 
 .fadeIn {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .fadeIn.animate {
   opacity: 1;
@@ -2055,6 +2055,9 @@ footer .topFooter a {
   margin-bottom: 0;
   padding-bottom: 2.1428571429rem;
 }
+.contactUsDetails_Sec .contactUsDetails .contactAddress p a {
+  color: #515151;
+}
 .contactUsDetails_Sec .contactUsDetails .contactAddress .line {
   width: 3.5714rem;
   height: 2px;
@@ -2097,8 +2100,13 @@ footer .topFooter a {
 .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .fromGroup textarea.form_control {
   height: 84px;
 }
+.contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .fromGroup label {
+  padding-top: 7px;
+  margin-bottom: 0;
+  color: red;
+}
 @media (max-width: 765px) {
-  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .form_control:first-child {
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .inputform_control:first-child .form_control {
     margin-bottom: 1.2857rem;
   }
 }
@@ -2106,11 +2114,11 @@ footer .topFooter a {
   .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup {
     display: flex;
   }
-  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .form_control:first-child {
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .inputform_control:first-child .form_control {
     border-radius: 0.35714rem 0 0 0.35714rem;
     border-right: 0;
   }
-  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .form_control:last-child {
+  .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm .inputGroup .inputform_control:last-child .form_control {
     border-radius: 0 0.35714rem 0.35714rem 0;
   }
 }
@@ -2123,6 +2131,7 @@ footer .topFooter a {
   color: #fff;
   text-transform: capitalize;
   display: block;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .contactUsDetails_Sec .contactUsDetails .row {

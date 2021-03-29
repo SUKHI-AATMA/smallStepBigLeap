@@ -94,12 +94,12 @@
                             </div>
                             <div class="email">
                                 <h6>Email</h6>
-                                <p> meenakshi_ssbl@gmail.com</p>
+                                <p> <a href="mailto:meenakshi_ssbl@gmail.com">meenakshi_ssbl@gmail.com</a></p>
                                 <div class="line"></div>
                             </div>
                             <div class="mobile">
                                 <h6>Mobile</h6>
-                                <p class="pb-0">+91 983458900
+                                <p class="pb-0"><a href="tel:+91983458900">+91 983458900</a>
                                 </p>
                             </div>
                         </div>
@@ -108,22 +108,24 @@
                         <div class="contectUsForm_sec fadeUp">
                             <h6>Happy to contact you</h6>
                             <div class="cuForm">
-                                <form name="contact" action="contact-us.html?success=true" method="POST"
-                                    data-netlify="true" class="contectUsForm">
+                                <form name="contact" id="contactForm" action="contact-us.html?success=true"
+                                    method="POST" data-netlify="true" class="contectUsForm">
                                     <div class="fromGroup">
-                                        <input type="text" name="name" placeholder="Name" class="form_control">
+                                        <input type="text" name="name" placeholder="Name" minlength="3"
+                                            class="form_control" required>
                                     </div>
                                     <div class="fromGroup">
                                         <div class="inputGroup">
-                                            <input type="tel" name="mobile" placeholder="Mobile"
-                                                class="form_control mobile">
-                                            <input type="email" name="email" placeholder="Email"
-                                                class="form_control email">
+                                            <div class="inputform_control"> <input type="tel" minlength="100"
+                                                    name="mobile" placeholder="Mobile" class="form_control mobile"
+                                                    required></div>
+                                            <div class="inputform_control"><input type="email" name="email"
+                                                    placeholder="Email" class="form_control email" required></div>
                                         </div>
                                     </div>
 
                                     <div class="fromGroup">
-                                        <textarea class="form_control" placeholder="Message" name="message">
+                                        <textarea class="form_control" placeholder="Message" name="message" required>
 
                                         </textarea>
                                     </div>
@@ -148,7 +150,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <!--/*<footer>*/-->
     <footer>
@@ -163,6 +165,7 @@
     <!--/*<footer>*/-->
     <!--js file  start -->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <!--js file  end -->
     <!-- the mousewheel plugin -->
     <script type="text/javascript" src="assets/js/jquery.mousewheel.js"></script>

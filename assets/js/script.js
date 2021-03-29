@@ -26,6 +26,22 @@ $(function () {
     e.preventDefault();
     $(".comm_popup_overlay_Js, .comm_pop_container_blk").fadeOut();
   });
+  $("#contactForm").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 3,
+      },
+      mobile: {
+        required: true,
+        tel: true,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+  });
 });
 
 $(window)
