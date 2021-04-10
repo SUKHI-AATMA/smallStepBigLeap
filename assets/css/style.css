@@ -1714,6 +1714,7 @@ footer .topFooter a {
   padding: 2.14286rem 0;
   border-bottom: 0.07142857rem solid #138f54;
   margin-bottom: 2.2857rem;
+  flex-wrap: wrap;
 }
 @media (max-width: 991px) {
   .ourExpertiseSec .accordianSec .accordianData .acdLeft ul {
@@ -1723,6 +1724,7 @@ footer .topFooter a {
 .ourExpertiseSec .accordianSec .accordianData .acdLeft ul li {
   padding: 0 1.642857rem;
   position: relative;
+  margin: 0 0 10px;
 }
 @media (max-width: 991px) {
   .ourExpertiseSec .accordianSec .accordianData .acdLeft ul li {
@@ -1766,6 +1768,7 @@ footer .topFooter a {
 }
 .ourExpertiseSec .accordianSec .accordianData .acdRight p {
   line-height: 1.4;
+  margin: 0 0 2.142857rem;
 }
 .ourExpertiseSec .accordianSec .accordianData .acdRight .acdrHeader {
   border-top: 0.142857rem solid #ffd27a;
@@ -2146,4 +2149,8 @@ footer .topFooter a {
 
 .contectUsSucess {
   display: none;
+}
+
+.terms p {
+  margin: 0 0 20px;
 }
