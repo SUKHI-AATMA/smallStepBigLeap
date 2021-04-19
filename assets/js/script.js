@@ -1,3 +1,4 @@
+var firstAccord = 0;
 $(function() {
     if ($(".scroll").length) {
         $(".scroll").jScrollPane();
@@ -7,16 +8,33 @@ $(function() {
         $("nav").toggleClass("open");
         $(this).toggleClass("open");
     });
-    $("body").on("click", ".listigHeader, .action", function(e) {
+    $("body").on("click", ".listigHeader", function(e) {
         var el = $(this);
-        $(".box-acco").find(".level-box").stop().slideUp();
-        if ($(el).find(".action").hasClass("active")) {
-            $(el).find(".action").removeClass("active");
-        } else {
-            $(".action").removeClass("active");
-            $(el).find(".action").addClass("active");
-        }
-        $(el).closest(".box-acco").find(".level-box").stop().slideToggle();
+        // $(".box-acco").find(".level-box").stop().slideUp();
+        // if ($(el).find(".action").hasClass("active")) {
+        //     $(el).find(".action").removeClass("active");
+        // } else {
+        //     $(".action").removeClass("active");
+        //     $(el).find(".action").addClass("active");
+        // }
+        $(".box-acco").removeClass('active').find(".level-box").slideUp();
+        $(el).parents(".box-acco").addClass('active').find(".level-box").slideDown();
+            if(firstAccord != 0)
+            {    
+                setTimeout(function() {
+                    var scrTp = $(el).parents(".box-acco").offset().top - 100;
+                    $('html,body').animate({ scrollTop: scrTp }, 500)
+                }, 500);
+                firstAccord = 1;
+            }
+
+        // var url_string = window.location.href;
+        // var url = new URL(url_string);
+        // var c = url.searchParams.get("s");
+        // if(c != undefined)
+        // {
+
+        // }
     });
     $(".open_modal_js").on("click", function() {
         var popupID = $(this).attr("data-popupID");
@@ -67,6 +85,11 @@ $(window)
                 var scrTp = $(sec).offset().top;
                 $('html,body').animate({ scrollTop: scrTp }, 500)
             }, 500);
+        }
+        else
+        {
+            $('[data-sec="Cardiovascular"]').find('.listigHeader').click();
+            firstAccord = 1;
         }
     });
 

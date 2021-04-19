@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ssbl.netlify.app/</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/about-us.html</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/our-expertise.html</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/why-us.html</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/contact-us.html</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/our-expertise.html?s=Cardiovascular</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/our-expertise.html?s=Gastrointestinal</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/our-expertise.html?s=Mental</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/our-expertise.html?s=Family</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/our-expertise.html?s=Women%E2%80%99s</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/our-expertise.html?s=Individual</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/our-expertise.html?s=Institutional</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ssbl.netlify.app/terms.html</loc>
+  <lastmod>2021-04-19T19:24:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

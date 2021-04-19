@@ -21,6 +21,9 @@ footer {
       color: #515151;
       padding: 0 8px;
       font-weight: 600;
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }

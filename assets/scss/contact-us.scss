@@ -33,7 +33,7 @@
         font-weight: 600;
         font-size: 1.142857rem;
         color: #515151;
-        padding-bottom: 2.142857142857143rem;
+        padding-bottom: 0.5rem;
         padding-top: 2.142857142857143rem;
       }
       p {
@@ -77,9 +77,12 @@
             border-radius: 0.35714rem;
             width: 100%;
             padding: 0.35714rem 0.7142857rem;
+
+            &.error::placeholder { color: red; }
           }
           textarea.form_control {
             height: 84px;
+            &.error { color: red; }
           }
           label {
             padding-top: 7px;
