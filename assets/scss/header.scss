@@ -27,7 +27,8 @@ header {
         }
 
         .rightHeader {
-            width: calc(100% - 167px);
+            /*width: calc(100% - 167px);*/
+            width: auto;
             display: flex;
             align-items: center;
 
@@ -44,6 +45,7 @@ header {
                     top: 100%;
                     left: 0;
                     width: 100%;
+                    height: calc(100vh - 80px);
                     flex-direction: column;
                     padding-left: 0;
                     border-top: 1px solid #eee;
@@ -52,6 +54,8 @@ header {
                     &:not(.open) {
                         display: none;
                     }
+
+
                 }
 
                 .nav_blk {
@@ -63,6 +67,8 @@ header {
                     }
 
                     >li {
+                        position: relative;
+
                         a {
                             display: block;
                             padding: 2rem 1.7143rem;
@@ -80,23 +86,52 @@ header {
                             @media (max-width: 991px) {
                                 padding: 1rem;
                                 text-align: center;
+
+                                width: auto;
+                                display: inline-block;
+                                font-size: 1.2rem;
+
+                                /* margin: 0 0 0 20px; */
+
                             }
+
                             &:after {
-                              position: absolute;
-                              bottom: 0;
-                              left: 50%;
-                              content: '';
-                              width: 0;
-                              background: $secondary;
-                              height: 4px;
-                              display: inline-block;
-                              transform: translate(-50%,0);
-                              transition: width 0.3s ease;
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                content: '';
+                                width: 0;
+                                background: $secondary;
+                                height: 4px;
+                                display: inline-block;
+                                transform: translate(-50%, 0);
+                                transition: width 0.3s ease;
+
+                                @media (max-width: 991px) {
+                                    position: relative;
+                                    left: unset;
+                                    width: 5px;
+                                    transform: translate(0, 0) rotate(135deg);
+                                    bottom: unset;
+                                    display: inline-block;
+                                    height: 5px;
+                                    background: none;
+                                    border: 2px solid #f9bd14;
+                                    border-color: #f9bd14 #f9bd14 transparent transparent;
+                                    margin: 0 0 0 10px;
+                                    top: -2px;
+                                }
                             }
+
                             &.active:after,
                             &:hover:after {
-                                width:100%;
+                                width: 100%;
+
+                                @media (max-width: 991px) {
+                                    width: 5px;
+                                }
                             }
+
                         }
 
 
@@ -107,11 +142,79 @@ header {
                                 /*border-color: $secondary;*/
                             }
                         }
+
+                        ul {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background: #fff;
+                            width: 200%;
+                            padding: 0;
+                            /*height: 0;*/
+                            overflow: hidden;
+                            display: none;
+
+                            @media (max-width: 991px) {
+                                position: relative;
+                                top: unset;
+                                margin: 0 0 0 20px;
+                                padding: 0 0 20px;
+                                display: block;
+                                height: auto;
+                            }
+
+                            a {
+                                padding: 1rem 1.7143rem;
+                                display: inline-block;
+
+                                &:after {
+                                    width: 50px;
+                                    left: unset;
+                                    transform: translate(0, 0);
+                                    position: relative;
+                                    display: block;
+                                    height: 2px;
+                                    margin: 4px 0 0;
+
+                                    @media (max-width: 991px) {
+                                        border: none;
+                                        background: #f9bd14;
+                                    }
+                                }
+
+                                &:hover:after {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            ul {
+
+                                width: 150%;
+
+                                @media (max-width: 991px) {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        &:nth-child(3),
+                        &:nth-child(4) {
+                            @media (max-width: 991px) {
+                                a:after {
+                                    display: none;
+                                }
+                            }
+                        }
+
+
                     }
                 }
 
                 .socialNav_blk {
                     display: flex;
+                    display: none;
 
                     @media (max-width: 991px) {
                         justify-content: center;
@@ -130,22 +233,58 @@ header {
 
             .hamburgar {
                 width: 30px;
-                height: 30px;
+                height: 20px;
                 margin-left: auto;
                 cursor: pointer;
                 flex-direction: column;
                 display: none;
+                position: relative;
+
 
                 @media (max-width: 991px) {
                     display: flex;
                 }
 
                 span {
-                    height: 3px;
+                    height: 2px;
                     width: 100%;
                     background-color: #000;
-                    margin: 3px 0;
+                    /* margin: 3px 0; */
+                    position: absolute;
+                    top: calc(50% - 1px);
+                    left: 0;
+                    transition: transform 0.3s ease, opacity 0.2s ease, top 0.3s ease, left 0.3s ease;
+
+                    &:first-child {
+                        top: 0;
+                    }
+
+                    &:last-child {
+                        top: calc(100% - 2px);
+                    }
                 }
+
+                &.open {
+
+                    span {
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+
+                        &:nth-child(1),
+                        &:nth-child(3) {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%) rotate(45deg);
+                        }
+
+                        &:nth-child(3) {
+                            transform: translate(-50%, -50%) rotate(-45deg);
+                        }
+                    }
+                }
+
             }
         }
     }

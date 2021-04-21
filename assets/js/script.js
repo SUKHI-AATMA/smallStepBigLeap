@@ -19,14 +19,13 @@ $(function() {
         // }
         $(".box-acco").removeClass('active').find(".level-box").slideUp();
         $(el).parents(".box-acco").addClass('active').find(".level-box").slideDown();
-            if(firstAccord != 0)
-            {    
-                setTimeout(function() {
-                    var scrTp = $(el).parents(".box-acco").offset().top - 100;
-                    $('html,body').animate({ scrollTop: scrTp }, 500)
-                }, 500);
-                firstAccord = 1;
-            }
+        if (firstAccord != 0) {
+            setTimeout(function() {
+                var scrTp = $(el).parents(".box-acco").offset().top - 100;
+                $('html,body').animate({ scrollTop: scrTp }, 500)
+            }, 500);
+            firstAccord = 1;
+        }
 
         // var url_string = window.location.href;
         // var url = new URL(url_string);
@@ -36,6 +35,21 @@ $(function() {
 
         // }
     });
+    if ($('.hamburgar').is(':visible')) {
+        // $('.nav_blk > li > a').on('click', function(e) {
+        //     e.preventDefault();
+        //     if (!$(this).next('ul').is(':visible')) {
+        //         $(this).parents('ul').find('ul').slideUp();
+        //         $(this).next('ul').slideDown();
+        //     }
+        // });
+    } else {
+        $('.nav_blk li').hover(function() {
+            $(this).find('ul').slideDown();
+        }, function() {
+            $(this).find('ul').slideUp();
+        });
+    }
     $(".open_modal_js").on("click", function() {
         var popupID = $(this).attr("data-popupID");
         $(".comm_popup_overlay_Js, #" + popupID).fadeIn();
@@ -85,9 +99,7 @@ $(window)
                 var scrTp = $(sec).offset().top;
                 $('html,body').animate({ scrollTop: scrTp }, 500)
             }, 500);
-        }
-        else
-        {
+        } else {
             $('[data-sec="Cardiovascular"]').find('.listigHeader').click();
             firstAccord = 1;
         }
