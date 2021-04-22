@@ -3,7 +3,7 @@
     padding-bottom: 1.42857rem;
 
     .ourPhilosophyCont {
-        color: #737373;
+        color: $text-base;
 
         &>div:first-child {
             font-size: 1.4rem;
@@ -18,7 +18,7 @@
 
 
         p {
-            color: #737373;
+            color: $text-base;
             margin-bottom: 1.7857143rem;
         }
 
@@ -29,7 +29,7 @@
                 position: relative;
                 line-height: 1.4;
                 margin-bottom: 0.7142857rem;
-                color: #737373;
+                color: $text-base;
 
                 &:before {
                     content: "";
@@ -203,7 +203,7 @@
     padding-bottom: 3.57142857rem;
     position: relative;
     border-top: 1px solid #cccccc;
-    color: #737373;
+    color: $text-base;
 
     .topImg {
         position: absolute;

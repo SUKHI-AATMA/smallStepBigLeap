@@ -1,7 +1,16 @@
 .contactUs {
   padding-top: 1.42857rem;
-  color: #737373;
+  color: $text-base;
   .contactUsCont {
+    &>div:first-child {
+            font-size: 1.4rem;
+
+            i {
+                color: #f9bd14;
+                font-weight: 600;
+
+            }
+        }
     .w-50 {
       @media (max-width: 991px) {
         width: 100%;
@@ -12,7 +21,7 @@
 .contactUsDetails_Sec {
   padding-top: 0.571428rem;
   padding-bottom: 3.142857142857143rem;
-  color: #737373;
+  color: $text-base;
   .contactUsDetails {
     .border-right {
       border-right: 1px solid #ccc;
@@ -39,9 +48,9 @@
       p {
         margin-bottom: 0;
         padding-bottom: 2.142857142857143rem;
-        a {
+        /*a {
           color: #515151;
-        }
+        }*/
       }
       .line {
         width: 3.5714rem;
@@ -120,13 +129,19 @@
         button {
           width: 150px;
           height: 38px;
-          background-color: #138f54;
+          background: #138f54;
+          border: 2px solid  #138f54;
           border-radius: 0.35714rem;
           margin: 0 auto;
           color: #fff;
           text-transform: capitalize;
           display: block;
           cursor: pointer;
+          transition: background 0.3s ease, color 0.3s ease;
+          &:hover {
+            background: transparent;
+            color: #138f54;
+          }
         }
       }
     }

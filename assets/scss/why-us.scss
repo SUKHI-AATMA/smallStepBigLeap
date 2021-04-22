@@ -2,7 +2,7 @@
   .ourApproachCont {
     padding-top: 3.7857rem;
     padding-bottom: 1.7857rem;
-    color: #737373;
+    color: $text-base;
     background-image: url(../images/OurApproach.png);
     background-repeat: no-repeat;
     background-position: left top;
@@ -13,7 +13,7 @@
       font-weight: 600;
     }
     p {
-      color: #737373;
+      color: $text-base;
       margin-bottom: 1.7857143rem;
       line-height: 1.4;
     }

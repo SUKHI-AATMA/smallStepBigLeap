@@ -1,3 +1,4 @@
+/*$text-base: $text-base;*/
 @font-face {
   font-family: "ITCAvantGardePro-Bold";
   src: url("../fonts/ITCAvantGardePro-Bold.eot");
@@ -127,6 +128,8 @@ em {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #138e55;
+  transition: color 0.2s ease;
 }
 
 a:active,
@@ -134,6 +137,7 @@ a:focus,
 a:hover {
   outline: 0;
   text-decoration: none;
+  color: #f9bd14;
 }
 
 html[xmlns] .clearfix {
@@ -816,7 +820,7 @@ label {
 }
 .comm_pop_container_blk .panel .panel-body {
   padding: 7.142857rem;
-  color: #737373;
+  color: #000;
   font-size: 1rem;
 }
 @media (max-width: 767px) {
@@ -1006,7 +1010,7 @@ header .topHeader .rightHeader nav .nav_blk > li a {
   padding: 2rem 1.7143rem;
   /*border-bottom: 4px solid transparent;*/
   text-decoration: none;
-  color: #515151;
+  color: #000;
   font-size: 1.143rem;
   font-weight: 600;
   position: relative;
@@ -1369,7 +1373,7 @@ footer .topFooter a:hover {
 }
 .homeBanner .marqueeSec span {
   font-size: 1.14286rem;
-  color: #737373;
+  color: #000;
   line-height: 1;
   padding-left: 1.5rem;
 }
@@ -1599,7 +1603,7 @@ footer .topFooter a:hover {
   padding-bottom: 1.42857rem;
 }
 .ourPhilosophy .ourPhilosophyCont {
-  color: #737373;
+  color: #000;
 }
 .ourPhilosophy .ourPhilosophyCont > div:first-child {
   font-size: 1.4rem;
@@ -1611,7 +1615,7 @@ footer .topFooter a:hover {
   font-weight: 600;
 }
 .ourPhilosophy .ourPhilosophyCont p {
-  color: #737373;
+  color: #000;
   margin-bottom: 1.7857143rem;
 }
 .ourPhilosophy .ourPhilosophyCont ul {
@@ -1621,7 +1625,7 @@ footer .topFooter a:hover {
   position: relative;
   line-height: 1.4;
   margin-bottom: 0.7142857rem;
-  color: #737373;
+  color: #000;
 }
 .ourPhilosophy .ourPhilosophyCont ul li:before {
   content: "";
@@ -1769,7 +1773,7 @@ footer .topFooter a:hover {
   padding-bottom: 3.57142857rem;
   position: relative;
   border-top: 1px solid #cccccc;
-  color: #737373;
+  color: #000;
 }
 .theBeginning .topImg {
   position: absolute;
@@ -1834,8 +1838,15 @@ footer .topFooter a:hover {
 .ourExpertiseSec .ourExpertiseCont {
   padding-left: 6.42857rem;
   padding-right: 6.42857rem;
-  color: #737373;
+  color: #000;
   line-height: 1.5;
+}
+.ourExpertiseSec .ourExpertiseCont > div:first-child {
+  font-size: 1.4rem;
+}
+.ourExpertiseSec .ourExpertiseCont > div:first-child i {
+  color: #f9bd14;
+  font-weight: 600;
 }
 @media (max-width: 768px) {
   .ourExpertiseSec .ourExpertiseCont {
@@ -1862,7 +1873,7 @@ footer .topFooter a:hover {
 .ourExpertiseSec .accordianSec .accordianData {
   padding-left: 11.7857rem;
   display: flex;
-  color: #737373;
+  color: #000;
   padding-bottom: 3.57143rem;
 }
 @media (max-width: 991px) {
@@ -2007,9 +2018,15 @@ footer .topFooter a:hover {
 .ourExpertiseSec .accordianSec .accordianData .acdRight .acdrFooter {
   padding: 0.714286rem;
   text-align: center;
-  background-color: #138f54;
+  background: #138f54;
+  border: 2px solid #138f54;
   color: #fff;
   line-height: 1.3;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.ourExpertiseSec .accordianSec .accordianData .acdRight .acdrFooter:hover {
+  background: transparent;
+  color: #138e55;
 }
 
 .grid-l1 {
@@ -2154,7 +2171,7 @@ footer .topFooter a:hover {
 .ourApproach .ourApproachCont {
   padding-top: 3.7857rem;
   padding-bottom: 1.7857rem;
-  color: #737373;
+  color: #000;
   background-image: url(../images/OurApproach.png);
   background-repeat: no-repeat;
   background-position: left top;
@@ -2168,7 +2185,7 @@ footer .topFooter a:hover {
   font-weight: 600;
 }
 .ourApproach .ourApproachCont p {
-  color: #737373;
+  color: #000;
   margin-bottom: 1.7857143rem;
   line-height: 1.4;
 }
@@ -2212,7 +2229,14 @@ footer .topFooter a:hover {
 
 .contactUs {
   padding-top: 1.42857rem;
-  color: #737373;
+  color: #000;
+}
+.contactUs .contactUsCont > div:first-child {
+  font-size: 1.4rem;
+}
+.contactUs .contactUsCont > div:first-child i {
+  color: #f9bd14;
+  font-weight: 600;
 }
 @media (max-width: 991px) {
   .contactUs .contactUsCont .w-50 {
@@ -2223,7 +2247,7 @@ footer .topFooter a:hover {
 .contactUsDetails_Sec {
   padding-top: 0.571428rem;
   padding-bottom: 3.1428571429rem;
-  color: #737373;
+  color: #000;
 }
 .contactUsDetails_Sec .contactUsDetails .border-right {
   border-right: 1px solid #ccc;
@@ -2255,9 +2279,9 @@ footer .topFooter a:hover {
 .contactUsDetails_Sec .contactUsDetails .contactAddress p {
   margin-bottom: 0;
   padding-bottom: 2.1428571429rem;
-}
-.contactUsDetails_Sec .contactUsDetails .contactAddress p a {
-  color: #515151;
+  /*a {
+    color: #515151;
+  }*/
 }
 .contactUsDetails_Sec .contactUsDetails .contactAddress .line {
   width: 3.5714rem;
@@ -2332,13 +2356,19 @@ footer .topFooter a:hover {
 .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm button {
   width: 150px;
   height: 38px;
-  background-color: #138f54;
+  background: #138f54;
+  border: 2px solid #138f54;
   border-radius: 0.35714rem;
   margin: 0 auto;
   color: #fff;
   text-transform: capitalize;
   display: block;
   cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.contactUsDetails_Sec .contactUsDetails .contectUsForm_sec .contectUsForm button:hover {
+  background: transparent;
+  color: #138f54;
 }
 @media (max-width: 768px) {
   .contactUsDetails_Sec .contactUsDetails .row {

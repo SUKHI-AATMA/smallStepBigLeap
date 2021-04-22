@@ -31,8 +31,18 @@
     .ourExpertiseCont {
         padding-left: 6.42857rem;
         padding-right: 6.42857rem;
-        color: #737373;
+        color: $text-base;
         line-height: 1.5;
+
+        &>div:first-child {
+            font-size: 1.4rem;
+
+            i {
+                color: #f9bd14;
+                font-weight: 600;
+
+            }
+        }
 
         @media (max-width: 768px) {
             padding-left: 1.42857rem;
@@ -59,7 +69,7 @@
         .accordianData {
             padding-left: 11.7857rem;
             display: flex;
-            color: #737373;
+            color: $text-base;
             padding-bottom: 3.57143rem;
 
             @media (max-width: 991px) {
@@ -100,7 +110,7 @@
                     padding: 2.14286rem 0;
                     border-bottom: 0.07142857rem solid #138f54;
                     margin-bottom: 2.2857rem;
-                    flex-wrap:wrap;
+                    flex-wrap: wrap;
 
                     @media (max-width: 991px) {
                         padding: 1.54286rem 0;
@@ -210,9 +220,16 @@
                 .acdrFooter {
                     padding: 0.714286rem;
                     text-align: center;
-                    background-color: #138f54;
+                    background: #138f54;
+                    border: 2px solid #138f54;
                     color: #fff;
                     line-height: 1.3;
+                    transition: background 0.3s ease, color 0.3s ease;
+
+                    &:hover {
+                        background: transparent;
+                        color: $primary;
+                    }
                 }
             }
         }

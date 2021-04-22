@@ -21,7 +21,7 @@ $(function() {
         $(el).parents(".box-acco").addClass('active').find(".level-box").slideDown();
         if (firstAccord != 0) {
             setTimeout(function() {
-                var scrTp = $(el).parents(".box-acco").offset().top - 100;
+                var scrTp = $(el).parents(".box-acco").offset().top - $('header').outerHeight(true) - $('header').outerHeight(true);
                 $('html,body').animate({ scrollTop: scrTp }, 500)
             }, 500);
             firstAccord = 1;
@@ -96,7 +96,7 @@ $(window)
             var sec = '[data-sec="' + c + '"]'
             $(sec).find('.listigHeader').click()
             setTimeout(function() {
-                var scrTp = $(sec).offset().top;
+                var scrTp = $(sec).offset().top - $('header').outerHeight(true);
                 $('html,body').animate({ scrollTop: scrTp }, 500)
             }, 500);
         } else {
