@@ -829,7 +829,7 @@ label {
   }
 }
 .comm_pop_container_blk .panel .panel-body h4 {
-  color: #515151;
+  color: #000;
   font-size: 1.7142857143rem;
   display: flex;
   flex-direction: column;
@@ -898,6 +898,10 @@ label {
 
 .open_modal {
   cursor: pointer;
+}
+
+.terms p {
+  margin: 0 0 15px;
 }
 
 header {
@@ -1182,7 +1186,7 @@ footer .topFooter {
 }
 footer .topFooter a {
   font-size: 1rem;
-  color: #515151;
+  color: #000;
   padding: 0 8px;
   font-weight: 600;
 }
@@ -1359,7 +1363,7 @@ footer .topFooter a:hover {
   margin-bottom: 1.4286rem;
 }
 .homeBanner .gradBanner .bannerContent p {
-  color: #515151;
+  color: #000;
   font-size: 1.1429rem;
 }
 .homeBanner .marqueeSec {
@@ -1462,7 +1466,7 @@ footer .topFooter a:hover {
 .ourExpertise .expertiesRow h6 {
   text-align: center;
   font-size: 1.2857142rem;
-  color: #515151;
+  color: #000;
   font-weight: 600;
 }
 .ourExpertise .expertiesRow ul.tree {
@@ -1589,7 +1593,7 @@ footer .topFooter a:hover {
   transform: scale(1.05);
 }
 .ourExpertise .expertiesRow ul.tree li a {
-  color: #515151;
+  color: #000;
 }
 .ourExpertise .expertiesRow ul.tree li a:hover {
   color: #138e55;
@@ -1830,7 +1834,7 @@ footer .topFooter a:hover {
 }
 .ourExpertiseSec .title h4 {
   margin-bottom: 0.7143rem;
-  color: #515151;
+  color: #000;
 }
 .ourExpertiseSec .container {
   position: relative;
@@ -1861,13 +1865,13 @@ footer .topFooter a:hover {
   }
 }
 .ourExpertiseSec .accordianSec {
-  border-top: 0.142857rem solid #515151;
-  border-bottom: 0.142857rem solid #515151;
+  border-top: 0.142857rem solid #000;
+  border-bottom: 0.142857rem solid #000;
   margin-bottom: 4.2857rem;
 }
 .ourExpertiseSec .accordianSec .accordianHeader {
   background: #ededed;
-  color: #515151;
+  color: #000;
   padding: 2.57143rem 2.2857rem;
 }
 .ourExpertiseSec .accordianSec .accordianData {
@@ -2272,7 +2276,7 @@ footer .topFooter a:hover {
 .contactUsDetails_Sec .contactUsDetails .contactAddress h6 {
   font-weight: 600;
   font-size: 1.142857rem;
-  color: #515151;
+  color: #000;
   padding-bottom: 0.5rem;
   padding-top: 2.1428571429rem;
 }
@@ -2280,7 +2284,7 @@ footer .topFooter a:hover {
   margin-bottom: 0;
   padding-bottom: 2.1428571429rem;
   /*a {
-    color: #515151;
+    color: $text-base;
   }*/
 }
 .contactUsDetails_Sec .contactUsDetails .contactAddress .line {
@@ -2303,7 +2307,7 @@ footer .topFooter a:hover {
 .contactUsDetails_Sec .contactUsDetails .contectUsForm_sec h6 {
   font-weight: 600;
   font-size: 1.142857rem;
-  color: #515151;
+  color: #000;
   padding-bottom: 2.1428571429rem;
   text-align: center;
 }

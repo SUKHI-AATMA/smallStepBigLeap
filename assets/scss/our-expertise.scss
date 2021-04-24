@@ -20,7 +20,7 @@
 
         h4 {
             margin-bottom: 0.7143rem;
-            color: #515151;
+            color: $text-base;
         }
     }
 
@@ -56,13 +56,13 @@
     }
 
     .accordianSec {
-        border-top: 0.142857rem solid #515151;
-        border-bottom: 0.142857rem solid #515151;
+        border-top: 0.142857rem solid $text-base;
+        border-bottom: 0.142857rem solid $text-base;
         margin-bottom: 4.2857rem;
 
         .accordianHeader {
             background: #ededed;
-            color: #515151;
+            color: $text-base;
             padding: 2.57143rem 2.2857rem;
         }
 
